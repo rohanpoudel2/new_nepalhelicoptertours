@@ -1,0 +1,35 @@
+@import "../styles/colors.scss";
+
+.home {
+  width: 100%;
+
+  .featuredTours {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .viewMore {
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: $highlight-color;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+    }
+  }
+}

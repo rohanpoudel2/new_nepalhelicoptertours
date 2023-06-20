@@ -1,0 +1,14 @@
+@import "../../styles/colors.scss";
+
+.swiperHero {
+  width: 100%;
+  height: 400px;
+  position: relative;
+
+  .image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}

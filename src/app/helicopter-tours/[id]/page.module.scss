@@ -1,0 +1,40 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/mixins/responsive.scss";
+
+.tour {
+  .details {
+    display: flex;
+    margin: 20px 0px;
+    gap: 20px;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+
+    .left {
+      flex: 1.5;
+
+      .content {
+        margin-top: 20px;
+
+        h1,
+        h2 {
+          font-size: 32px;
+        }
+
+        p {
+          margin: 10px 0px;
+          text-align: justify;
+        }
+
+        ol {
+          margin: 10px 0px 0px 20px;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+    }
+  }
+}

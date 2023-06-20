@@ -1,0 +1,32 @@
+@import "../../styles/mixins/responsive.scss";
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-top: 1px solid #bbb;
+
+  @include mobile {
+    flex-direction: column;
+    height: 60px;
+  }
+
+  .footerText {
+    font-weight: bold;
+  }
+
+  .footerItems {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .footerItem {
+      cursor: pointer;
+
+      &:last-of-type {
+        cursor: auto;
+      }
+    }
+  }
+}

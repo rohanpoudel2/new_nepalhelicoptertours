@@ -1,0 +1,42 @@
+@import "../../styles/colors.scss";
+
+.tripInfo {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  position: sticky;
+  top: 120px;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .detail {
+      .head {
+        font-weight: bold;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .cost {
+    display: flex;
+    flex-direction: column;
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: $price-color;
+    }
+
+    .disclamer {
+      font-weight: lighter;
+    }
+  }
+
+
+}
